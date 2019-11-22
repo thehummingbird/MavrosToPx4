@@ -1,0 +1,46 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In function ‘[01m[Kvoid vio_cb(const Odometry&)[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:26:10:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Odometry {aka const nav_msgs::Odometry_<std::allocator<void> >}[m[K’
+       msg[01;31m[K->[m[Kchild_frame_id = "base_link";
+          [01;31m[K^~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:27:10:[m[K [01;31m[Kerror: [m[Kbase operand of ‘[01m[K->[m[K’ has non-pointer type ‘[01m[Kconst Odometry {aka const nav_msgs::Odometry_<std::allocator<void> >}[m[K’
+       msg[01;31m[K->[m[Kheader.frame_id = "map";
+          [01;31m[K^~[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:7[m[K:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:29:16:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\N'
+       ROS_INFO([01;35m[K"[m[KPUBLISHING\N");
+                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:348:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:29:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+       [01;36m[KR[m[KOS_INFO("PUBLISHING\N");
+       [01;36m[K^[m[K
+In file included from [01m[K/usr/include/boost/function/detail/maybe_include.hpp:18:0[m[K,
+                 from [01m[K/usr/include/boost/function/detail/function_iterate.hpp:14[m[K,
+                 from [01m[K/usr/include/boost/preprocessor/iteration/detail/iter/forward1.hpp:52[m[K,
+                 from [01m[K/usr/include/boost/function.hpp:64[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:40[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:7[m[K:
+/usr/include/boost/function/function_template.hpp: In instantiation of ‘[01m[Kstatic void boost::detail::function::void_function_invoker1<FunctionPtr, R, T0>::invoke(boost::detail::function::function_buffer&, T0) [with FunctionPtr = void (*)(const nav_msgs::Odometry_<std::allocator<void> >&); R = void; T0 = const boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >&][m[K’:
+[01m[K/usr/include/boost/function/function_template.hpp:925:38:[m[K   required from ‘[01m[Kvoid boost::function1<R, T1>::assign_to(Functor) [with Functor = void (*)(const nav_msgs::Odometry_<std::allocator<void> >&); R = void; T0 = const boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >&][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:716:7:[m[K   required from ‘[01m[Kboost::function1<R, T1>::function1(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const nav_msgs::Odometry_<std::allocator<void> >&); R = void; T0 = const boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >&; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:1061:16:[m[K   required from ‘[01m[Kboost::function<R(T0)>::function(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = void (*)(const nav_msgs::Odometry_<std::allocator<void> >&); R = void; T0 = const boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >&; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:44:35:[m[K   required from here
+[01m[K/usr/include/boost/function/function_template.hpp:118:11:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst nav_msgs::Odometry_<std::allocator<void> >&[m[K’ from expression of type ‘[01m[Kconst boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >[m[K’
+           [01;31m[KB[m[KOOST_FUNCTION_RETURN(f(BOOST_FUNCTION_ARGS));
+           [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/tester_node.dir/src/tester_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/tester_node.dir/all] Error 2
+make: *** [all] Error 2

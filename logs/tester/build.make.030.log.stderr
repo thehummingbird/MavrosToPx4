@@ -1,0 +1,10 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In constructor ‘[01m[KMavrosToPx4::MavrosToPx4()[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:39:35:[m[K [01;31m[Kerror: [m[KISO C++ forbids taking the address of an unqualified or parenthesized non-static member function to form a pointer to member function.  Say ‘[01m[K&MavrosToPx4::state_cb[m[K’ [[01;31m[K-fpermissive[m[K]
+             ("mavros/state", 10, &[01;31m[Kstate_cb[m[K,this);
+                                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:44:30:[m[K [01;31m[Kerror: [m[KISO C++ forbids taking the address of an unqualified or parenthesized non-static member function to form a pointer to member function.  Say ‘[01m[K&MavrosToPx4::vio_cb[m[K’ [[01;31m[K-fpermissive[m[K]
+             ("/vio_odom",10,&[01;31m[Kvio_cb[m[K,this);
+                              [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/tester_node.dir/src/tester_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/tester_node.dir/all] Error 2
+make: *** [all] Error 2

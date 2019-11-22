@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Your package node-->
+    <node pkg="tester" type="MavrosToPx4_node" name="MavrosToPx4_node" output="screen">
+    </node>
+
+    <node pkg="tester" type="vio_pub_node" name="vio_pub_node" output="screen">
+    </node>
+
+</launch>

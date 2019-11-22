@@ -1,0 +1,7 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/vio_pub_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/vio_pub_node.cpp:20:83:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__cxx11::string {aka std::__cxx11::basic_string<char>}[m[K’ to ‘[01m[Kchar*[m[K’ for argument ‘[01m[K1[m[K’ to ‘[01m[Kchar* strcat(char*, const char*)[m[K’
+   bag.open(strcat(fs::current_path().generic_string(),"/Vimaan_Autonomy_Task1.bag"[01;31m[K)[m[K, rosbag::bagmode::Read);
+                                                                                   [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/vio_pub_node.dir/src/vio_pub_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/vio_pub_node.dir/all] Error 2
+make: *** [all] Error 2

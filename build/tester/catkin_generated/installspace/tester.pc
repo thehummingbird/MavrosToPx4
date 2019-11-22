@@ -1,0 +1,8 @@
+prefix=/home/sharad/catkin_ws/install
+
+Name: tester
+Description: Description of tester
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/sharad/catkin_ws/install/lib 
+Requires: 

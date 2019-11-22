@@ -1,0 +1,38 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In constructor ‘[01m[KMavrosToPx4::MavrosToPx4()[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:39:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::Rate::Rate()[m[K’
+ MavrosToPx4::MavrosToPx4([01;31m[K)[m[K
+                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:39:0[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:2[m[K:
+[01m[K/opt/ros/melodic/include/ros/rate.h:59:12:[m[K [01;36m[Knote: [m[Kcandidate: ros::Rate::Rate(const ros::Duration&)
+   explicit [01;36m[KRate[m[K(const Duration&);
+            [01;36m[K^~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/rate.h:59:12:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/melodic/include/ros/rate.h:58:3:[m[K [01;36m[Knote: [m[Kcandidate: ros::Rate::Rate(double)
+   [01;36m[KRate[m[K(double frequency);
+   [01;36m[K^~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/rate.h:58:3:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/melodic/include/ros/rate.h:51:20:[m[K [01;36m[Knote: [m[Kcandidate: constexpr ros::Rate::Rate(const ros::Rate&)
+ class ROSTIME_DECL [01;36m[KRate[m[K
+                    [01;36m[K^~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/rate.h:51:20:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/opt/ros/melodic/include/ros/rate.h:51:20:[m[K [01;36m[Knote: [m[Kcandidate: constexpr ros::Rate::Rate(ros::Rate&&)
+[01m[K/opt/ros/melodic/include/ros/rate.h:51:20:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:42:42:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid MavrosToPx4::state_cb(const ConstPtr&)[m[K’
+             ("mavros/state", 10, state_cb[01;31m[K)[m[K;
+                                          [01;31m[K^[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:27:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   void [01;36m[Kstate_cb[m[K(const mavros_msgs::State::ConstPtr& msg);
+        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:47:35:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid MavrosToPx4::vio_cb(const ConstPtr&)[m[K’
+             ("/vio_odom",10,vio_cb[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:28:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   void [01;36m[Kvio_cb[m[K(const nav_msgs::Odometry::ConstPtr& msg);
+        [01;36m[K^~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:57:14:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(ros::Rate) (double)[m[K’
+     rate(20.0[01;31m[K)[m[K;
+              [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/tester_node.dir/src/tester_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/tester_node.dir/all] Error 2
+make: *** [all] Error 2

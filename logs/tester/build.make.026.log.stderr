@@ -1,0 +1,16 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In constructor ‘[01m[KMavrosToPx4::MavrosToPx4()[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:39:42:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid MavrosToPx4::state_cb(const ConstPtr&)[m[K’
+             ("mavros/state", 10, state_cb[01;31m[K)[m[K;
+                                          [01;31m[K^[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:27:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   void [01;36m[Kstate_cb[m[K(const mavros_msgs::State::ConstPtr& msg);
+        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:44:35:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid MavrosToPx4::vio_cb(const ConstPtr&)[m[K’
+             ("/vio_odom",10,vio_cb[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:28:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   void [01;36m[Kvio_cb[m[K(const nav_msgs::Odometry::ConstPtr& msg);
+        [01;36m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/tester_node.dir/src/tester_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/tester_node.dir/all] Error 2
+make: *** [all] Error 2

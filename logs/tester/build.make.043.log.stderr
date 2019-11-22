@@ -1,0 +1,7 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/vio_pub_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/vio_pub_node.cpp:20:30:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator+[m[K’ (operand types are ‘[01m[Kstd::experimental::filesystem::v1::__cxx11::path[m[K’ and ‘[01m[Kconst char [27][m[K’)
+   bag.open([01;31m[Kfs::current_path()+"/Vimaan_Autonomy_Task1.bag"[m[K, rosbag::bagmode::Read);
+            [01;31m[K~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/vio_pub_node.dir/src/vio_pub_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/vio_pub_node.dir/all] Error 2
+make: *** [all] Error 2

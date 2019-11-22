@@ -1,0 +1,8 @@
+Symlinking /home/sharad/catkin_ws/devel/lib/pkgconfig/tester.pc
+Symlinking /home/sharad/catkin_ws/devel/lib/tester/vio_pub_node
+Symlinking /home/sharad/catkin_ws/devel/lib/tester/MavrosToPx4_node
+Symlinking /home/sharad/catkin_ws/devel/share/tester/cmake/testerConfig.cmake
+Symlinking /home/sharad/catkin_ws/devel/share/tester/cmake/testerConfig-version.cmake
+Cleaning: (/home/sharad/catkin_ws/devel/.private/tester/lib/tester/tester_node, /home/sharad/catkin_ws/devel/lib/tester/tester_node)
+Unlinking: /home/sharad/catkin_ws/devel/lib/tester/tester_node
+Already unlinked: {}

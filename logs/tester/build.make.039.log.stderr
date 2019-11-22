@@ -1,0 +1,11 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/MavrosToPx4_node.cpp:[m[K In function ‘[01m[Kvoid vio_cb(const ConstPtr&)[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/MavrosToPx4_node.cpp:29:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kdone[m[K’ was not declared in this scope
+       [01;31m[Kdone[m[K = true;
+       [01;31m[K^~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/MavrosToPx4_node.cpp:29:7:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kclone[m[K’
+       [01;36m[Kdone[m[K = true;
+       [01;36m[K^~~~[m[K
+       [32m[Kclone[m[K
+make[2]: *** [CMakeFiles/MavrosToPx4_node.dir/src/MavrosToPx4_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/MavrosToPx4_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,34 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In function ‘[01m[Kvoid vio_cb(const ConstPtr&)[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:27:16:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Knav_msgs::Odometry {aka nav_msgs::Odometry_<std::allocator<void> >}[m[K’ and ‘[01m[Kconst ConstPtr {aka const boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >}[m[K’)
+       pubmsg = [01;31m[Kmsg[m[K
+                [01;31m[K^~~[m[K
+In file included from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:13:0[m[K:
+[01m[K/opt/ros/melodic/include/nav_msgs/Odometry.h:25:8:[m[K [01;36m[Knote: [m[Kcandidate: nav_msgs::Odometry_<std::allocator<void> >& nav_msgs::Odometry_<std::allocator<void> >::operator=(const nav_msgs::Odometry_<std::allocator<void> >&)
+ struct [01;36m[KOdometry_[m[K
+        [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/nav_msgs/Odometry.h:25:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst ConstPtr {aka const boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >}[m[K’ to ‘[01m[Kconst nav_msgs::Odometry_<std::allocator<void> >&[m[K’
+[01m[K/opt/ros/melodic/include/nav_msgs/Odometry.h:25:8:[m[K [01;36m[Knote: [m[Kcandidate: nav_msgs::Odometry_<std::allocator<void> >& nav_msgs::Odometry_<std::allocator<void> >::operator=(nav_msgs::Odometry_<std::allocator<void> >&&)
+[01m[K/opt/ros/melodic/include/nav_msgs/Odometry.h:25:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst ConstPtr {aka const boost::shared_ptr<const nav_msgs::Odometry_<std::allocator<void> > >}[m[K’ to ‘[01m[Knav_msgs::Odometry_<std::allocator<void> >&&[m[K’
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:7[m[K:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:31:16:[m[K [01;35m[Kwarning: [m[Kunknown escape sequence: '\N'
+       ROS_INFO([01;35m[K"[m[KPUBLISHING\N");
+                [01;35m[K^[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:348:165:[m[K [01;36m[Knote: [m[Kin definition of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, [01;36m[K__VA_ARGS__[m[K)
+                                                                                                                                                                     [01;36m[K^~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:387:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       [01;36m[KROSCONSOLE_PRINT_AT_LOCATION[m[K(__VA_ARGS__); \
+       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/console.h:572:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) [01;36m[KROS_LOG_COND[m[K(true, level, name, __VA_ARGS__)
+                                   [01;36m[K^~~~~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) [01;36m[KROS_LOG[m[K(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+                       [01;36m[K^~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:31:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+       [01;36m[KR[m[KOS_INFO("PUBLISHING\N");
+       [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/tester_node.dir/src/tester_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/tester_node.dir/all] Error 2
+make: *** [all] Error 2

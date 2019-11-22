@@ -1,0 +1,9 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/vio_pub_node.cpp:9:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kfilesystem[m[K’ is not a namespace-name
+ namespace fs = std::[01;31m[Kfilesystem[m[K;
+                     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/vio_pub_node.cpp:9:31:[m[K [01;31m[Kerror: [m[Kexpected namespace-name before ‘[01m[K;[m[K’ token
+ namespace fs = std::filesystem[01;31m[K;[m[K
+                               [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/vio_pub_node.dir/src/vio_pub_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/vio_pub_node.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,59 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In constructor ‘[01m[KMavrosToPx4::MavrosToPx4()[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:39:42:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid MavrosToPx4::state_cb(mavros_msgs::State)[m[K’
+             ("mavros/state", 10, state_cb[01;31m[K)[m[K;
+                                          [01;31m[K^[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:27:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   void [01;36m[Kstate_cb[m[K(const mavros_msgs::State msg);
+        [01;36m[K^~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:44:35:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid MavrosToPx4::vio_cb(const ConstPtr&)[m[K’
+             ("/vio_odom",10,vio_cb[01;31m[K)[m[K;
+                                   [01;31m[K^[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:28:8:[m[K [01;36m[Knote: [m[Kdeclared here
+   void [01;36m[Kvio_cb[m[K(const nav_msgs::Odometry::ConstPtr& msg);
+        [01;36m[K^~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In member function ‘[01m[Kvoid MavrosToPx4::state_cb(mavros_msgs::State)[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:58:21:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator*[m[K’ (operand type is ‘[01m[Kconst State {aka const mavros_msgs::State_<std::allocator<void> >}[m[K’)
+     current_state = [01;31m[K*msg[m[K;
+                     [01;31m[K^~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21:0[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:2[m[K:
+[01m[K/usr/include/c++/7/complex:404:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> std::complex<_Tp> std::operator*(const _Tp&, const std::complex<_Tp>&)
+     [01;36m[Koperator[m[K*(const _Tp& __x, const complex<_Tp>& __y)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/complex:404:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:58:22:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+     current_state = *[01;36m[Kmsg[m[K;
+                      [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21:0[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:2[m[K:
+[01m[K/usr/include/c++/7/complex:395:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const _Tp&)
+     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const _Tp& __y)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/complex:395:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:58:22:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst State {aka const mavros_msgs::State_<std::allocator<void> >}[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+     current_state = *[01;36m[Kmsg[m[K;
+                      [01;36m[K^~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21:0[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:2[m[K:
+[01m[K/usr/include/c++/7/complex:386:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> std::complex<_Tp> std::operator*(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     [01;36m[Koperator[m[K*(const complex<_Tp>& __x, const complex<_Tp>& __y)
+     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/7/complex:386:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:58:22:[m[K [01;36m[Knote: [m[K  ‘[01m[Kconst State {aka const mavros_msgs::State_<std::allocator<void> >}[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+     current_state = *[01;36m[Kmsg[m[K;
+                      [01;36m[K^~~[m[K
+make[2]: *** [CMakeFiles/tester_node.dir/src/tester_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/tester_node.dir/all] Error 2
+make: *** [all] Error 2

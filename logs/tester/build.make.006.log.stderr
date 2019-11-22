@@ -1,0 +1,43 @@
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:19:19:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+ void vio_cb(const [01;31m[Knav_msgs[m[K::Odometry::ConstPtr& msg){
+                   [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:19:37:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+ void vio_cb(const nav_msgs::Odometry[01;31m[K::[m[KConstPtr& msg){
+                                     [01;31m[K^~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:19:37:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:19:37:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:35:44:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ was not declared in this scope
+     ros::Subscriber vio_sub = nh.subscribe<[01;31m[Knav_msgs[m[K::Odometry>
+                                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:35:34:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+     ros::Subscriber vio_sub = nh.[01;31m[Ksubscribe<nav_msgs::Odometry>[m[K
+                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:36:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kvio_cb[m[K’ was not declared in this scope
+             ("/vio_odom",10,[01;31m[Kvio_cb[m[K);
+                             [01;31m[K^~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:36:29:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kvio_sub[m[K’
+             ("/vio_odom",10,[01;36m[Kvio_cb[m[K);
+                             [01;36m[K^~~~~~[m[K
+                             [32m[Kvio_sub[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:38:18:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+     vio_pub = nh.[01;31m[Kadvertise<nav_msgs::Odometry>[m[K("/mavros/odometry/out", 10);
+                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:38:74:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::advertise<nav_msgs>(const char [21], int)[m[K’
+     vio_pub = nh.advertise<nav_msgs::Odometry>("/mavros/odometry/out", 10[01;31m[K)[m[K;
+                                                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, bool)
+     Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size, bool latch = false)
+               [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:249:15:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/sharad/catkin_ws/src/tester/src/tester_node.cpp:7[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Publisher ros::NodeHandle::advertise(const string&, uint32_t, const SubscriberStatusCallback&, const SubscriberStatusCallback&, const VoidConstPtr&, bool)
+   Publisher [01;36m[Kadvertise[m[K(const std::string& topic, uint32_t queue_size,
+             [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:315:13:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+make[2]: *** [CMakeFiles/tester_node.dir/src/tester_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/tester_node.dir/all] Error 2
+make: *** [all] Error 2
