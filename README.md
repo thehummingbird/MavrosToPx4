@@ -1,5 +1,5 @@
 # MavrosToPx4
-This task aims at receiving odometry data from a vio sensor (rosbag in our case) and sending it to px4 using MAVROS. To do this, we use an iris quadcopter in gazebo controlled using PX4 firmware. 
+This task aims at receiving odometry data from a vio sensor (rosbag in our case) and sending it to px4 using MAVROS. To do this, we use an iris quadcopter in gazebo controlled by PX4 firmware. 
 
 Process-
 1. I started off by reading up on MAVROS, px4 and eventually establishing a connection between them. Px4 dev guide (https://dev.px4.io/v1.9.0/en/) and mavros wiki (http://wiki.ros.org/mavros) were the major sources for this step
